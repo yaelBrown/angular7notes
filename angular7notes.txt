@@ -1,0 +1,66 @@
+Angular 7 tutorial notes. 
+  angular uses webpack. 
+  Hot model reloading - When webpack refreshes your browser
+
+  cohesion - things that are related should goto together. Be apart of one unit. 
+  class - groups of variables (properties) and functions (methods) that are highly related
+
+  angular was introduced in 2010
+  angular js (1.x) first version of angular
+  angular 2 was angular but rewritten in typescripts
+    typescript is easier to work with
+    cleaner
+  angular 4 came out after angular 2.3
+    was not a new framework
+    was not a major upgrade
+    the addition of angular/router (3.3.0) library pushed angular to angular 4. 
+    core, compiler, http were on version 2.3.0
+  angular 4 not a major upgrade to angular 2
+
+  typescript - is not javascript, basically a superset of javascript
+    has concept of strong or static typing
+    has OO features
+    catches compile-time errors
+    good tooling
+    You compile/transpile typescript code to javascript code
+    all javascript code is valid typescript code
+
+install typescript
+  sudo npm install -g typescript
+
+  tsc --version                     // gives you version of typescript
+
+install node
+
+install angular-cli thru node
+  npm install -g @angular/cli       // installs globally
+
+  ng --version                      // shows version of angular-cli installed
+
+
+
+Make sure git is installed
+  sudo apt-get install git
+
+Create new angular project
+  ng new appName
+  
+  [no angular routing]
+
+  ng serve                           // Starts development environment and runs a server. Similar to live-server
+
+
+
+Explore the project
+  e2e - end to end task. Tests that simulate a real user
+  node_modules - dont deploy to server
+  src - Where your source code to application goes
+    at least 1 module and 1 component
+  assest - where you store static assests like images
+  environment - where your store configuration settings for different environments
+  main.ts - starting point for application
+  karma - test runner for javascript code
+  tsconfig - typescript compiler. Converts typescript to javascript
+
+  goto src/app/app.component.ts
+    change L9 title to name of app
